@@ -54,7 +54,7 @@ img {
     letter-spacing: 0;
     line-height: normal;
     padding: 33px 0;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .header__nav {
@@ -69,7 +69,14 @@ img {
 
 .logo {
     max-height: 48px;
-    /* cursor: unset; */
+}
+
+.logo-image {
+    fill: #717171;
+}
+
+.logo-image:hover {
+    fill: #A0A0A0;
 }
 
 .menu__item {
@@ -519,7 +526,7 @@ img {
     background-color: #0A0A0A;
     color: #717171;
     padding: 51px 0;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .footer__body {
@@ -529,14 +536,19 @@ img {
     flex-wrap: wrap;
 }
 
-.footer__politics {
+.footer__politics-item {
     flex: 1 0 0;
     line-height: 1.28;
     letter-spacing: 0;
 }
 
 .footer__logo {
+    fill: #717171;
     max-height: 48px;
+}
+
+.footer__logo:hover {
+   fill: #A0A0A0;
 }
 
 .footer__phone-item {
@@ -547,6 +559,7 @@ img {
     letter-spacing: 0;
 }
 
+.footer__politics:hover,
 .footer__phone:hover {
     color: #A0A0A0;
 }
