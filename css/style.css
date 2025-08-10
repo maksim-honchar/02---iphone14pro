@@ -352,6 +352,7 @@ img {
     align-items: center;
     transition: all 0.3s ease 0s;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .color__item:hover {
@@ -548,7 +549,7 @@ img {
 }
 
 .footer__logo:hover {
-   fill: #A0A0A0;
+    fill: #A0A0A0;
 }
 
 .footer__phone-item {
@@ -585,4 +586,46 @@ img {
     .footer__logo {
         margin: 15px 0;
     }
+}
+
+.back-to-top-btn {
+    /* Робимо кнопку ідеально круглою */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    /* Позиціонуємо кнопку в нижньому правому куті */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    /* Вигляд кнопки */
+    background-color: #651cb9;
+    /* Темно-фіолетовий фон */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Легка тінь */
+    border: none;
+    cursor: pointer;
+
+    /* Вирівнювання стрілки по центру за допомогою Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Плавна анімація */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Приховуємо кнопку за замовчуванням */
+.back-to-top-btn.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Ефект при наведенні курсора */
+.back-to-top-btn:hover {
+    transform: translateY(-3px);
+    /* Легкий підйом кнопки */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Помітніша тінь */
 }
