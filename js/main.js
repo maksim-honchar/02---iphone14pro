@@ -27,3 +27,15 @@ window.addEventListener('scroll', () => {
 });
 
 
+
+const langToggleCheckbox = document.getElementById('lang-toggle-checkbox');
+
+langToggleCheckbox.addEventListener('change', () => {
+    if (langToggleCheckbox.checked) {
+        console.log('Мова переключена на англійську.');
+        // Тут ваша логіка для зміни мови
+    } else {
+        console.log('Мова переключена на українську.');
+        // Тут ваша логіка для зміни мови
+    }
+});

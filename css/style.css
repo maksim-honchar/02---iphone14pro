@@ -537,7 +537,7 @@ img {
 .footer {
     background-color: #0A0A0A;
     color: #717171;
-    padding: 51px 0;
+    padding: 50px 0 15px;
     transition: all 0.3s ease;
 }
 
@@ -546,6 +546,7 @@ img {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
 .footer__politics-item {
@@ -639,4 +640,96 @@ img {
     /* Легкий підйом кнопки */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     /* Помітніша тінь */
+}
+
+
+
+/* Перемикач мови */
+/* Контейнер для перемикача */
+.lang-switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 34px;
+    background-color: #e0e0e0;
+    border-radius: 34px;
+    padding: 0 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Приховуємо стандартний чекбокс */
+.lang-switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Стили для текстових міток */
+.lang-label-ua,
+.lang-label-en {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 34px;
+    transition: color 0.4s;
+}
+
+/* Стан за замовчуванням (коли UA активна) */
+.lang-label-ua {
+    left: 15px;
+    color: #000;
+    /* Колір UA чорний */
+}
+
+.lang-label-en {
+    right: 15px;
+    color: #a0a0a0;
+    /* Колір EN сірий */
+}
+
+/* Візуальний слайдер */
+.slider {
+    position: absolute;
+    height: 26px;
+    width: 40px;
+    left: 5px;
+    background-color: #fff;
+    border-radius: 34px;
+    transition: transform 0.4s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Зміни при увімкненні (коли EN активна) */
+.lang-switch input[type="checkbox"]:checked~.slider {
+    transform: translateX(50px);
+}
+
+.lang-switch input[type="checkbox"]:checked~.lang-label-ua {
+    color: #a0a0a0;
+}
+
+.lang-switch input[type="checkbox"]:checked~.lang-label-en {
+    color: #000;
+}
+
+/* big size */
+@media (min-width: 1200px) {}
+
+/* laptops and monitor */
+@media (max-width: 1199.98px) {}
+
+/* middle tablet */
+@media (max-width: 991.98px) {}
+
+/* small tablets and phones */
+@media (max-width: 767.98px) {}
+
+/* phones */
+@media (max-width: 575.98px) {
+    .lang-switch {
+        margin: 0 auto;
+    }
 }
