@@ -27,9 +27,12 @@
             <div class="header__container">
                 <nav class="header__nav">
                     <ul class="menu">
-                        <li class="menu__item"><a href="#what--new" class="menu__link">Що нового</a></li>
-                        <li class="menu__item"><a href="#section--color" class="menu__link">Колір</a></li>
-                        <li class="menu__item"><a href="#section--contacts" class="menu__link">Замовити</a></li>
+                        <li class="menu__item"><a href="#what--new" class="menu__link" data-key="whats_new">Що
+                                нового</a></li>
+                        <li class="menu__item"><a href="#section--color" class="menu__link" data-key="color">Колір</a>
+                        </li>
+                        <li class="menu__item"><a href="#section--contacts" class="menu__link"
+                                data-key="order">Замовити</a></li>
                     </ul>
                     <a href="#" class="logo">
                         <svg class="logo-image" width="40" height="48" viewBox="0 0 40 48" fill="none"
@@ -59,37 +62,35 @@
                     <div class="headline__body">
                         <h1 class="headline__title">IPHONE 14 PRO</h1>
                         <img src="images/iphone.png" alt="IPHONE 14 PRO" class="headline__image">
-                        <a href="#" class="headline__btn">ВИБРАТИ</a>
+                        <a href="#" class="headline__btn" data-key="select">ВИБРАТИ</a>
                     </div>
                 </div>
             </section>
             <section id="what--new" class="what-new">
                 <div class="what-new__container">
-                    <h2 class="what-new__title">ЩО НОВОГО</h2>
+                    <h2 class="what-new__title" data-key="whats_new_title">ЩО НОВОГО</h2>
                     <div class="what-new__body">
                         <div class="what-new__text">
-                            <p class="what-new__para">
+                            <p class="what-new__para" data-key="what-new__para-1">
                                 Всі моделі оснащені однокристальною системою A16 Bionic, 48-мегапіксельною основною
                                 камерою і екранами ProMotion із захистом Ceramic Shield і частотним діапазоном 1 — 120
                                 Гц, а також прискореною пам'яттю LPDDR5. Дизайн лінійки оновлено, на фронтальній панелі
                                 смартфонів два вирізи.
                             </p>
-                            <p class="what-new__para">
+                            <p class="what-new__para" data-key="what-new__para-2">
                                 Всі iPhone 14 в США будуть продаватися без лотка для SIM-карт: виробник заявляє, що
                                 вдосконалена технологія eSIM дозволить перенести старі електронні сім-карти на нові
                                 смартфони.
                             </p>
-                            <p class="what-new__para">
+                            <p class="what-new__para" data-key="what-new__para-3">
                                 Оновлено фронтальну камеру (вона оснащена автофокусом і швидше розпізнає користувача в
                                 умовах недостатньої освітленості) і сенсор основної камери.
                             </p>
-                            <p class="what-new__para what-new__para_strong">
-                                <b>
-                                    iPhone 14 Pro вийшов у новому дизайні — без фірмового «чубчика». Також в асортименті
-                                    з'явився новий колір. У смартфоні, на відміну від «звичайних» 14-х айфонів,
-                                    встановлений процесор A16 Bionic, який може за секунду виконувати 4 трлн операцій з
-                                    фото.
-                                </b>
+                            <p class="what-new__para what-new__para_strong" data-key="what-new__para-4">
+                                iPhone 14 Pro вийшов у новому дизайні — без фірмового «чубчика». Також в асортименті
+                                з'явився новий колір. У смартфоні, на відміну від «звичайних» 14-х айфонів,
+                                встановлений процесор A16 Bionic, який може за секунду виконувати 4 трлн операцій з
+                                фото.
                             </p>
 
                         </div>
@@ -99,7 +100,7 @@
             </section>
             <section id="section--color" class="color">
                 <div class="color__container">
-                    <h2 class="color__title">ОБEРИ СВІЙ КОЛІР</h2>
+                    <h2 class="color__title" data-key="color_title">ОБEРИ СВІЙ КОЛІР</h2>
                     <div class="color__body">
                         <div class="color__item">
                             <img src="images/color-1.jpg" alt="iphone 14 pro" class="color__image">
@@ -128,11 +129,11 @@
                 <div class="contacts__container">
                     <div class="contacts__body">
                         <form action="#" class="contacts__form">
-                            <h2 class="contacts__title">ХОЧЕШ IPHONE 14 PRO?</h2>
+                            <h2 class="contacts__title" data-key="contacts__title">ХОЧЕШ IPHONE 14 PRO?</h2>
                             <input type="text" class="contacts__input" placeholder="Ваше ім'я">
                             <input type="tel" class="contacts__input" placeholder="Номер телефону">
-                            <p class="contacts__subtext">Найближчим часом наш менеджер зв'яжеться з Вами</p>
-                            <button type="submit" class="contacts__btn">ЗАМОВИТИ</button>
+                            <p class="contacts__subtext" data-key="contacts__subtext">Найближчим часом наш менеджер зв'яжеться з Вами</p>
+                            <button type="submit" class="contacts__btn" data-key="contacts__btn">ЗАМОВИТИ</button>
                         </form>
                         <img src="images/contact.jpg" alt="iphone14pro" class="contacts__image">
                     </div>
@@ -143,7 +144,7 @@
             <div class="footer__container">
                 <div class="footer__body">
                     <div class="footer__politics-item">
-                        <a href="#" class="footer__politics">Політика конфіденційності</a>
+                        <a href="#" class="footer__politics" data-key="footer_politics">Політика конфіденційності</a>
                     </div>
                     <a href="#" class="footer__logo-link">
                         <svg class="footer__logo" width="40" height="48" viewBox="0 0 40 48" fill="none"

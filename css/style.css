@@ -425,6 +425,7 @@ img {
     letter-spacing: 0;
     text-transform: uppercase;
     margin: 0 0 60px;
+    text-align: center;
 }
 
 .contacts__input {
