@@ -89,6 +89,34 @@ function setLanguage(lang) {
     enRules(lang)
 }
 
+function sliderToggle() {
+    const langInput = document.getElementById("lang-toggle-checkbox");
+    langInput.checked = true;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Спершу перевіряємо, чи є збережена мова в localStorage (користувач вже обирав мову)
+    const savedLang = localStorage.getItem('preferredLang');
+    if (savedLang) {
+        setLanguage(savedLang);
+        return; // Якщо мова збережена, використовуємо її і виходимо
+    }
+
+    // 2. Якщо мова не збережена, визначаємо мову браузера
+    const browserLanguage = navigator.language || navigator.userLanguage; // navigator.userLanguage для старих IE
+    // console.log('Визначена мова браузера:', browserLanguage);
+
+    // Перевіряємо, чи мова браузера українська
+    if (browserLanguage.startsWith('uk')) {
+        setLanguage('uk');
+
+    } else {
+        // Якщо мова браузера не українська або не підтримується, встановлюємо англійську за замовчуванням
+        setLanguage('en');
+        sliderToggle();
+    }
+});
+
 
 const langToggleCheckbox = document.getElementById('lang-toggle-checkbox');
 
