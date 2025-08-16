@@ -333,7 +333,11 @@ img {
 @media (max-width: 767.98px) {}
 
 /* phones */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .what-new {
+        padding: 40px 0 110px;
+    }
+}
 
 /* COLOR */
 .color {
@@ -372,6 +376,10 @@ img {
     margin: 0 0 10px;
 }
 
+.subname__wrapper {
+    min-height: 28px;
+}
+
 .color__subname {
     line-height: 1.28;
     letter-spacing: 0;
@@ -397,6 +405,10 @@ img {
 
 /* phones */
 @media (max-width: 575.98px) {
+    .color {
+        padding: 0;
+    }
+
     .color__item {
         flex: 0 0 100%;
     }
@@ -413,8 +425,12 @@ img {
     padding: 137px 93px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     flex: 0 1 600px;
+}
+
+.contacts__title-wrapper {
+    min-height: 97px;
 }
 
 .contacts__title {
@@ -424,7 +440,6 @@ img {
     line-height: normal;
     letter-spacing: 0;
     text-transform: uppercase;
-    margin: 0 0 60px;
     text-align: center;
 }
 
@@ -447,6 +462,11 @@ img {
     /* Видаляє тінь, якщо вона є */
 }
 
+.contacts__subtext-wrapper {
+    min-height: 66px;
+    text-align: center;
+}
+
 .contacts__input::placeholder,
 .contacts__subtext {
     color: #fff;
@@ -462,8 +482,7 @@ img {
     margin-bottom: 20px;
 }
 
-.contacts__input:last-of-type,
-.contacts__subtext {
+.contacts__input:last-of-type {
     margin-bottom: 30px;
 }
 
@@ -483,7 +502,8 @@ img {
     line-height: 1.28;
     letter-spacing: 0;
     text-transform: uppercase;
-    padding: 16px 80px;
+    min-width: 240px;
+    min-height: 50px;
     cursor: pointer;
     transition: all 0.3s ease, box-shadow 0.3s ease;
 }
@@ -521,7 +541,7 @@ img {
     }
 
     .contacts__form {
-        padding: 100px 0 50px;
+        padding: 80px 0;
         flex: 0 1 auto;
     }
 
@@ -598,6 +618,10 @@ img {
 
     .footer__logo {
         margin: 15px 0;
+    }
+
+    .footer {
+        padding: 25px 0;
     }
 }
 
